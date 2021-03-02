@@ -89,7 +89,6 @@ export const BoxContainer = styled.div`
 
 export const VotesCounter = styled.div`
   div {
-    text-shadow: 1px 1px 3px #000;
     width: ${({ positivePercentage }) =>
       positivePercentage < 30
         ? "30%"
