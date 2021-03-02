@@ -32,20 +32,23 @@ const Showcase = () => {
           <h1>Replica</h1>
 
           <NavLinks click={click}>
-            <a href="#services">
-              <li>Services</li>
-            </a>
-            <a href="#about-us">
-              <li>About Us</li>
-            </a>
-            <a href="#contact">
-              <li>Contact</li>
-            </a>
-            <a href="#search" aria-label="Search">
-              <li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+
+            <li>
+              <a href="#about-us">About Us</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+
+            <li>
+              <a href="#search" aria-label="Search">
                 <FontAwesomeIcon icon={faSearch} />
-              </li>
-            </a>
+              </a>
+            </li>
           </NavLinks>
           <div className="burguer-menu" onClick={handleClick}>
             <div className="burguer-menu__line"></div>

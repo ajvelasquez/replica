@@ -13,34 +13,36 @@ const Footer = () => {
       <div className="container">
         <div>
           <ul>
-            <a href="#">
-              <li>Terms and services</li>
-            </a>
-            <a href="#">
-              <li>Privacy policy</li>
-            </a>
-            <a href="#">
-              <li>Work with us</li>
-            </a>
+            <li>
+              <a href="#">Terms and services</a>
+            </li>
+            <li>
+              <a href="#">Privacy policy</a>
+            </li>
+            <li>
+              <a href="#">Work with us</a>
+            </li>
           </ul>
         </div>
         <div>
           <ul>
-            <a href="#" aria-label="Follow us on Facebook">
-              <li>
+            <li>
+              <a href="#" aria-label="Follow us on Facebook">
                 <FontAwesomeIcon icon={faFacebook} />
-              </li>
-            </a>
-            <a href="#" aria-label="Follow us on Instagram">
-              <li>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Follow us on Instagram">
                 <FontAwesomeIcon icon={faInstagram} />
-              </li>
-            </a>
-            <a href="#" aria-label="Follow us on Linkedin">
-              <li>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Follow us on Linkedin">
                 <FontAwesomeIcon icon={faLinkedin} />
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

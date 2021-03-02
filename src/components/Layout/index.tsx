@@ -4,7 +4,11 @@ import { Helmet } from "react-helmet";
 const Layout = ({ children }) => {
   return (
     <div className="Layout">
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+        }}
+      >
         <meta charSet="utf-8" />
         <title>My Replica</title>
         <meta
