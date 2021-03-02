@@ -88,10 +88,10 @@ const Showcase = () => {
           </ShowcaseCardContent>
           <ShowcaseCardButton>
             <button className="bg-primary" aria-label="I like it">
-              <FontAwesomeIcon icon={faThumbsUp} size="lg" />
+              <FontAwesomeIcon icon={faThumbsUp} size="lg" fixedWidth />
             </button>
             <button className="bg-secondary" aria-label="I dislike it">
-              <FontAwesomeIcon icon={faThumbsDown} size="lg" />
+              <FontAwesomeIcon icon={faThumbsDown} size="lg" fixedWidth />
             </button>
           </ShowcaseCardButton>
         </ShowcaseCard>
