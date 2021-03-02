@@ -59,7 +59,7 @@ const Showcase = () => {
 
             <li>
               <a href="#search" aria-label="Search">
-                <FontAwesomeIcon icon={faSearch} />
+                <FontAwesomeIcon icon={faSearch} size="lg" />
               </a>
             </li>
           </NavLinks>
@@ -88,10 +88,10 @@ const Showcase = () => {
           </ShowcaseCardContent>
           <ShowcaseCardButton>
             <button className="bg-primary" aria-label="I like it">
-              <FontAwesomeIcon icon={faThumbsUp} />
+              <FontAwesomeIcon icon={faThumbsUp} size="lg" />
             </button>
             <button className="bg-secondary" aria-label="I dislike it">
-              <FontAwesomeIcon icon={faThumbsDown} />
+              <FontAwesomeIcon icon={faThumbsDown} size="lg" />
             </button>
           </ShowcaseCardButton>
         </ShowcaseCard>
