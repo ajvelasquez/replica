@@ -40,7 +40,7 @@ const VotingBox = ({ title, date, content, votes, id }: Topic) => {
       />
       <div className="title">
         <div className="title__icon">
-          <FontAwesomeIcon icon={faThumbsUp} size="lg" fixedWidth />
+          <FontAwesomeIcon icon={faThumbsUp} />
         </div>
         <div className="title__container">
           <h2>{title}</h2>
@@ -56,25 +56,24 @@ const VotingBox = ({ title, date, content, votes, id }: Topic) => {
           data-testid="like-btn"
           aria-label="I like it"
         >
-          <FontAwesomeIcon icon={faThumbsUp} size="lg" fixedWidth />
+          <FontAwesomeIcon icon={faThumbsUp} />
         </button>
         <button
           onClick={() => dispatch(selectOption(id, VoteType.DISLIKE))}
           aria-label="I dislike it"
         >
-          <FontAwesomeIcon icon={faThumbsDown} size="lg" fixedWidth />
+          <FontAwesomeIcon icon={faThumbsDown} />
         </button>
         <button onClick={() => dispatch(voteTopic(id))}>Vote Now</button>
       </div>
       <VotesCounter positivePercentage={positivePercentage}>
         <div>
-          <FontAwesomeIcon icon={faThumbsUp} size="lg" />
-          {" fixedWidth "}
+          <FontAwesomeIcon icon={faThumbsUp} />
           <span>{positivePercentage}%</span>
         </div>
         <div>
-          <span>{negativePercentage}%</span>{" "}
-          <FontAwesomeIcon icon={faThumbsDown} size="lg" fixedWidth />
+          <span>{negativePercentage}%</span>
+          <FontAwesomeIcon icon={faThumbsDown} />
         </div>
       </VotesCounter>
     </BoxContainer>
