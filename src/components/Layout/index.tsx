@@ -7,6 +7,10 @@ const Layout = ({ children }) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>My Replica</title>
+        <meta
+          name="description"
+          content="This is just a test site to learn Netlify."
+        ></meta>
       </Helmet>
       {children}
     </div>
