@@ -1,13 +1,12 @@
 import { faThumbsDown, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import { useDispatch } from "react-redux";
 import VoteType from "../../../models/enums/VoteType";
 import Topic from "../../../models/interfaces/Topic";
 import { selectOption, voteTopic } from "../../../state/ducks/topics";
-import PlanetsImg from "./../../../images/planets.jpeg";
 import { BoxContainer, VotesCounter } from "./styles";
-import { StaticImage } from "gatsby-plugin-image";
 
 const VotingBox = ({ title, date, content, votes, id }: Topic) => {
   const dispatch = useDispatch();
@@ -36,6 +35,8 @@ const VotingBox = ({ title, date, content, votes, id }: Topic) => {
           zIndex: -1,
         }}
         loading="eager"
+        width={880}
+        height={1100}
       />
       <div className="title">
         <div className="title__icon">

@@ -4,10 +4,9 @@ import {
   faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { StaticImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
-import nighSky from "./../../images/night-sky.jpeg";
 import {
-  BackgroundImg,
   BarBottom,
   Nav,
   NavLinks,
@@ -16,7 +15,6 @@ import {
   ShowcaseCardContent,
   ShowcaseContainer,
 } from "./styles";
-import { StaticImage } from "gatsby-plugin-image";
 
 const Showcase = () => {
   const [click, setClick] = useState(false);
@@ -39,6 +37,8 @@ const Showcase = () => {
           zIndex: -1,
         }}
         loading="eager"
+        width={4240}
+        height={2384}
       />
       <div className="container">
         <Nav click={click}>
