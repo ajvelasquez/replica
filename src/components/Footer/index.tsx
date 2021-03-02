@@ -26,17 +26,17 @@ const Footer = () => {
         </div>
         <div>
           <ul>
-            <a href="#">
+            <a href="#" aria-label="Follow us on Facebook">
               <li>
                 <FontAwesomeIcon icon={faFacebook} />
               </li>
             </a>
-            <a href="#">
+            <a href="#" aria-label="Follow us on Instagram">
               <li>
                 <FontAwesomeIcon icon={faInstagram} />
               </li>
             </a>
-            <a href="#">
+            <a href="#" aria-label="Follow us on Linkedin">
               <li>
                 <FontAwesomeIcon icon={faLinkedin} />
               </li>

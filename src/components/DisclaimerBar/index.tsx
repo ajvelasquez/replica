@@ -8,7 +8,7 @@ const DisclaimerBar = () => {
     <div className="container">
       <Banner>
         <div className="close-icon">
-          <button>
+          <button aria-label="Close banner">
             <FontAwesomeIcon icon={faWindowClose} />
           </button>
         </div>
@@ -22,7 +22,7 @@ const DisclaimerBar = () => {
           eaque ab inventore optio!
         </div>
         <div className="close-icon-md">
-          <button>
+          <button aria-label="Close banner">
             <FontAwesomeIcon icon={faWindowClose} />
           </button>
         </div>

@@ -36,10 +36,10 @@ const VotingBox = ({ title, date, content, votes, id }: Topic) => {
         <p>{content}</p>
       </div>
       <div className="buttons container">
-        <button onClick={() => dispatch(selectOption(id, VoteType.LIKE))} data-testid="like-btn">
+        <button onClick={() => dispatch(selectOption(id, VoteType.LIKE))} data-testid="like-btn" aria-label="I like it">
           <FontAwesomeIcon icon={faThumbsUp} />
         </button>
-        <button onClick={() => dispatch(selectOption(id, VoteType.DISLIKE))}>
+        <button onClick={() => dispatch(selectOption(id, VoteType.DISLIKE))} aria-label="I dislike it">
           <FontAwesomeIcon icon={faThumbsDown} />
         </button>
         <button onClick={() => dispatch(voteTopic(id))}>Vote Now</button>
