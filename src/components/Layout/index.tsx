@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 const Layout = ({ children }) => {
   return (
