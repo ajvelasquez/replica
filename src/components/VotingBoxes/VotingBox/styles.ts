@@ -15,16 +15,6 @@ export const BoxContainer = styled.div`
     width: 48%;
   }
 
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-
   .title {
     position: relative;
     margin-bottom: 1rem;

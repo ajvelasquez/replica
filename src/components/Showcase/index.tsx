@@ -16,6 +16,7 @@ import {
   ShowcaseCardContent,
   ShowcaseContainer,
 } from "./styles";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Showcase = () => {
   const [click, setClick] = useState(false);
@@ -26,7 +27,19 @@ const Showcase = () => {
 
   return (
     <ShowcaseContainer>
-      <BackgroundImg src={nighSky} alt="" />
+      <StaticImage
+        src="./../../images/night-sky.jpeg"
+        alt=""
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          height: "100%",
+          width: "100%",
+          zIndex: -1,
+        }}
+        loading="eager"
+      />
       <div className="container">
         <Nav click={click}>
           <h1>Replica</h1>

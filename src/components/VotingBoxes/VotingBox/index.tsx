@@ -7,6 +7,7 @@ import Topic from "../../../models/interfaces/Topic";
 import { selectOption, voteTopic } from "../../../state/ducks/topics";
 import PlanetsImg from "./../../../images/planets.jpeg";
 import { BoxContainer, VotesCounter } from "./styles";
+import { StaticImage } from "gatsby-plugin-image";
 
 const VotingBox = ({ title, date, content, votes, id }: Topic) => {
   const dispatch = useDispatch();
@@ -22,7 +23,20 @@ const VotingBox = ({ title, date, content, votes, id }: Topic) => {
 
   return (
     <BoxContainer data-testid="box-container">
-      <img src={PlanetsImg} alt="someting" />
+      <StaticImage
+        src="./../../../images/planets.jpeg"
+        alt="Planets between the starts"
+        placeholder="blurred"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          height: "100%",
+          width: "100%",
+          zIndex: -1,
+        }}
+        loading="eager"
+      />
       <div className="title">
         <div className="title__icon">
           <FontAwesomeIcon icon={faThumbsUp} />
@@ -36,10 +50,17 @@ const VotingBox = ({ title, date, content, votes, id }: Topic) => {
         <p>{content}</p>
       </div>
       <div className="buttons container">
-        <button onClick={() => dispatch(selectOption(id, VoteType.LIKE))} data-testid="like-btn" aria-label="I like it">
+        <button
+          onClick={() => dispatch(selectOption(id, VoteType.LIKE))}
+          data-testid="like-btn"
+          aria-label="I like it"
+        >
           <FontAwesomeIcon icon={faThumbsUp} />
         </button>
-        <button onClick={() => dispatch(selectOption(id, VoteType.DISLIKE))} aria-label="I dislike it">
+        <button
+          onClick={() => dispatch(selectOption(id, VoteType.DISLIKE))}
+          aria-label="I dislike it"
+        >
           <FontAwesomeIcon icon={faThumbsDown} />
         </button>
         <button onClick={() => dispatch(voteTopic(id))}>Vote Now</button>

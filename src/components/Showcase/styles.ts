@@ -8,16 +8,6 @@ export const ShowcaseContainer = styled.div`
   position: relative;
 `;
 
-export const BackgroundImg = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;
-
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
